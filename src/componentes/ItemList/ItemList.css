@@ -1,0 +1,5 @@
+.item-list {
+  width: 1750px;
+  display: flex;
+  flex-wrap: wrap;
+}

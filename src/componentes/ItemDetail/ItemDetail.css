@@ -1,0 +1,36 @@
+.item-detail{
+  display: flex;
+  justify-content: center;
+  padding: 5% 10%;
+}
+
+.item-detail .imagen{
+  width: 25%;
+  box-shadow: 2px 4px 23px 5px rgba(0, 0, 0, 0.18);
+    -webkit-box-shadow: 2px 4px 23px 5px rgba(0, 0, 0, 0.18);
+    -moz-box-shadow: 2px 4px 23px 5px rgba(0, 0, 0, 0.18);
+}
+
+.item-detail .texto{
+  padding: 10px 50px;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 2px 4px 23px 5px rgba(0, 0, 0, 0.18);
+    -webkit-box-shadow: 2px 4px 23px 5px rgba(0, 0, 0, 0.18);
+    -moz-box-shadow: 2px 4px 23px 5px rgba(0, 0, 0, 0.18);
+}
+
+.item-detail .button-terminar{
+  width: 200px;
+  font-size: 13px;
+  font-weight: 600;
+  display: flex;
+  justify-content: center;
+  padding: 10px 0;
+  background-color: white ;
+  border-radius: 4px;
+  text-decoration: none;
+  color: black;
+  border: 2px solid black;
+  margin-bottom: 20px;
+}
