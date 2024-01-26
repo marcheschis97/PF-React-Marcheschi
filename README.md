@@ -1,23 +1,13 @@
+<p align="center">
+    <img src="./public/img/multimarca-logo.png" alt="MultiMarca"  height="100"/>
+</p>
 
-# Mi ecommerce
-
-Este proyecto es un ecommerce de productos de tecnologia, el cual te permite explorar los diferentes productos, filtrando por categoria o clickeando sobre el mismo y viendo sus detalles, tambien tiene integrado un carrito de compras y un checkout para que el usuario nos brinde sus datos de contacto, esta informacion es guardada en una base de datos.
-
-## Instalación
-
-Instalar mi proyecto con npm
-
-```bash
-  npm install
-  npm run dev
-```
+<h1 align="center">
+    Bienvenidos a MultiMarca!
+</h1>
 
 
-## Dependencias
-
-```bash
-  firebase
-  react-router-dom
-  react-spinners
-```
-    
+<p align="center">
+    Esta es una pagina de ropa, la cual acerca a los usuarios ropa de todo tipo de marcas
+    y facilita su compra para una agradable experiencia. Todas las marcas que se pueda imaginar a un simple click de distancia, tanto para Mujeres como hombres y niños de todas las edades.
+</p>
