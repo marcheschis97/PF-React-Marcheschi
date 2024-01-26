@@ -1,36 +1,45 @@
-.item-detail{
+.item-detail-page{
   display: flex;
   justify-content: center;
   padding: 5% 10%;
 }
 
-.item-detail .imagen{
+.item-detail-page .imagen{
   width: 25%;
   box-shadow: 2px 4px 23px 5px rgba(0, 0, 0, 0.18);
     -webkit-box-shadow: 2px 4px 23px 5px rgba(0, 0, 0, 0.18);
     -moz-box-shadow: 2px 4px 23px 5px rgba(0, 0, 0, 0.18);
 }
 
-.item-detail .texto{
+.item-detail-page .item-detail{
   padding: 10px 50px;
   display: flex;
   flex-direction: column;
+  background-color: rgb(255, 226, 61);
   box-shadow: 2px 4px 23px 5px rgba(0, 0, 0, 0.18);
     -webkit-box-shadow: 2px 4px 23px 5px rgba(0, 0, 0, 0.18);
     -moz-box-shadow: 2px 4px 23px 5px rgba(0, 0, 0, 0.18);
 }
 
-.item-detail .button-terminar{
+.item-detail-page .button-terminar{
   width: 200px;
   font-size: 13px;
   font-weight: 600;
   display: flex;
   justify-content: center;
   padding: 10px 0;
-  background-color: white ;
+  background-color: rgb(0, 0, 0) ;
   border-radius: 4px;
   text-decoration: none;
-  color: black;
-  border: 2px solid black;
+  color: rgb(255, 255, 255);
+  margin-top: 10;
   margin-bottom: 20px;
+  transition: 0.5s;
+  object-fit: cover;
+}
+
+.item-detail-page .button-terminar:hover{
+  transform: scale(1.05);
+  background-color: rgb(245, 166, 70);
+  color: rgb(0, 0, 0);
 }

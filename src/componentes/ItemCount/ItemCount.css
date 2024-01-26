@@ -2,31 +2,55 @@
   width: 200px;
   display: flex;
   flex-direction: column;
+  font-weight: bold;
 }
 
 .item-count .controles{
   display: flex;
   justify-content: space-between;
-  align-items: center;
-  font-size: 20px;
+  align-items: center;;
 }
 
 .controles button{
   width: 50px;
   height: 30px;
-  background-color: rgb(42, 42, 42);
+  background-color: rgb(0, 0, 0);
   color: white;
+  font-size: medium;
   border-radius: 5px;
-  font-weight: bold;
   border: none;
+  transition: 0.5s;
+  object-fit: cover;
+  text-decoration: none;
 }
 
-button:hover{
+.controles button:hover{
   cursor: pointer;
+  transform: scale(1.05);
+  background-color: rgb(245, 166, 70);
+  color: rgb(0, 0, 0);
 }
 
-.item-count .terminar{
-  padding: 10px 0;
-  background-color: white ;
-  border-radius: 4px;
+.item-count .agregar-carrito{
+  margin-right: 40px;
+  width: 200px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+  border: 1px solid rgb(0, 0, 0);
+  border-radius: 5px;
+  color: rgb(255, 255, 255);
+  font-size: medium;
+  transition: 0.5s;
+  object-fit: cover;
+  text-decoration: none;
+}
+
+.item-count .agregar-carrito:hover{
+  cursor: pointer;
+  transform: scale(1.05);
+  background-color: rgb(245, 166, 70);
+  color: rgb(0, 0, 0);
 }

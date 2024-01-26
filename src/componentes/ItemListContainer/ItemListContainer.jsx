@@ -21,10 +21,8 @@ const ItemListContainer = ({ saludo }) => {
     const productosRef = collection(db, "productos");
 
     if(categoria){
-      //filtrar data
       consulta = query(productosRef, where("categoria", "==", categoria))
     }else{
-      //traer toda la data
       consulta = productosRef
     }
 

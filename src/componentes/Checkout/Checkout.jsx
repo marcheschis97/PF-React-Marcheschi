@@ -31,10 +31,10 @@ const Checkout = () => {
         fecha: new Date(),
         total: totalPrecio(),
       };
-  
+
       subirOrden(orden);
     }else{
-      alert("Los emails deben ser iguales")
+      alert("Los Emails deben ser iguales")
     }
   };
 
@@ -42,7 +42,6 @@ const Checkout = () => {
     const ordenesRef = collection(db, "ordenes");
     addDoc(ordenesRef, orden).then((respuesta) => {
       setIdOrden(respuesta.id)
-      //limpiar carrito
       borrarCarrito()
     });
   };

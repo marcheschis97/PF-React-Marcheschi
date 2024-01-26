@@ -3,16 +3,23 @@
   padding: 20px;
 }
 
+.carrito h3{
+  padding: 0 80px;
+  font-size: 25px;
+}
+
 .carrito .lista{
   display: flex;
+  padding: 0 100px;
 }
 
 .carrito .producto{
   width: 200px;
   height: auto;
+  background-color: rgb(255, 228, 74);
   border: 1px solid black;
   list-style: none;
-  padding: 10px 20px;
+  padding: 10px 40px;
   border-radius: 5px;
   margin-right: 20px;
 }
@@ -20,20 +27,28 @@
 .producto .imagen{
   width: 70%;
   margin: 0 15%;
+  border: 1px solid black;
 }
 
 .producto .nombre{
+  display: flex;
+  justify-content: center;
+  align-items: center;
   font-weight: bold;
 }
 
 .producto .borrar{
-  width: 25px;
-  height: 25px;
+  width: 122px;
+  height: 30px;
   padding: 5px;
   display: flex;
-  border: 1px solid rgb(46, 46, 46);
+  justify-content: center;
+  align-items: center;
+  background-color: beige;
+  border: 1px solid rgb(0, 0, 0);
   border-radius: 5px;
-  color: rgb(46, 46, 46);
+  color: rgb(0, 0, 0);
+  font-weight: bold;
 }
 
 .producto .borrar:hover{
@@ -42,23 +57,44 @@
   cursor: pointer;
 }
 
-.botones-carrito-borrar, .botones-carrito-continuar{
+.botones-carrito{
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.botones-carrito-borrar, .botones-carrito-terminar{
+  margin-right: 40px;
   width: 200px;
   margin-top: 20px;
   display: flex;
   justify-content: center;
   align-items: center;
-  display: flex;
-  border: 1px solid rgb(46, 46, 46);
+  background-color: black;
+  border: 1px solid rgb(0, 0, 0);
   border-radius: 5px;
-  color: rgb(46, 46, 46);
+  color: rgb(255, 255, 255);
+  transition: 0.5s;
+  object-fit: cover;
   text-decoration: none;
+}
+
+.botones-carrito-borrar{
+  margin-left: 100px;
 }
 
 .botones-carrito-borrar:hover{
   cursor: pointer;
+  transform: scale(1.05);
   background-color: rgb(210, 0, 0);
   color: white;
+}
+
+.botones-carrito-terminar:hover {
+  cursor: pointer;
+  transform: scale(1.05);
+  background-color: rgb(245, 166, 70);
+  color: rgb(0, 0, 0);
 }
 
 .botones-carrito-borrar p{
@@ -75,17 +111,35 @@
   align-items: center;
 }
 
-.carrito-vacio .button {
-  width: 200px; 
-  font-size: 13px;
+.carrito-vacio h2{
+  font-size: xx-large;
+  margin-bottom: 0px;
+}
+
+.carrito-vacio p{
+  font-size:large;
+  margin-top: 10px;
+}
+
+.carrito-vacio .boton {
+  width: 200px;
+  font-size: 20px;
   font-weight: 600;
   display: flex;
   justify-content: center;
   padding: 10px 0;
-  background-color: white ;
+  background-color: rgb(0, 0, 0) ;
   border-radius: 4px;
   text-decoration: none;
-  color: black;
-  border: 2px solid black;
+  color: rgb(255, 255, 255);
+  margin-top: 10;
   margin-bottom: 20px;
+  transition: 0.5s;
+  object-fit: cover;
+}
+
+.carrito-vacio .boton:hover{
+  transform: scale(1.05);
+  background-color: rgb(245, 166, 70);
+  color: rgb(0, 0, 0);
 }

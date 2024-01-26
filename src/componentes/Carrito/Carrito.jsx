@@ -13,8 +13,9 @@ const Carrito = () => {
   if (carrito.length === 0) {
     return (
       <div className="carrito-vacio">
-        <h2>Ooppss el carrito esta vacio 😢</h2>
-        <Link className="button" to="/">
+        <h2>El carrito esta vacio...</h2>
+        <p>Una vez que añadas algo a tu carrito, aparecerá acá.</p>
+        <Link className="boton" to="/">
           Volver al inicio
         </Link>
       </div>
@@ -23,6 +24,7 @@ const Carrito = () => {
 
   return (
     <div className="carrito">
+      <h3>Tu carrito:</h3>
       <ul className="lista">
         {carrito.map((producto) => (
           <li className="producto" key={producto.id}>
@@ -32,24 +34,25 @@ const Carrito = () => {
               alt={producto.nombre}
             />
             <p className="texto nombre">{producto.nombre}</p>
-            <p className="texto">cantidad: {producto.cantidad}</p>
-            <p className="texto">precio c/u: ${producto.precio}</p>
-            <FaTrashAlt
-              className="borrar"
+            <p className="texto">Cantidad: {producto.cantidad}</p>
+            <p className="texto">Precio por unidad: ${producto.precio}</p>
+            <p className="borrar"
               onClick={() => borrarProducto(producto.id)}
               size={25}
-            />
+            >Borrar producto</p>
           </li>
         ))}
       </ul>
       <h3>Total a pagar: ${totalPrecio()}</h3>
-      <div className="botones-carrito-borrar" onClick={borrarCarrito}>
-        <p>Vaciar carrito</p>
-        <FaTrashAlt size={25} />
+      <div className="botones-carrito">
+        <div className="botones-carrito-borrar" onClick={borrarCarrito}>
+          <p>Vaciar carrito</p>
+          <FaTrashAlt size={25} />
+        </div>
+        <Link className="botones-carrito-terminar" to="/checkout">
+          <p>Terminar compra</p>
+        </Link>
       </div>
-      <Link className="botones-carrito-continuar" to="/checkout">
-        <p>Continuar con la compra</p>
-      </Link>
     </div>
   );
 };

@@ -1,17 +1,13 @@
 import { createContext, useState } from "react";
 
-//Creamos un contexto de React llamado CartContex
 const CartContext = createContext();
 
-// Creamos un componente llamado CartProvider
-// que servira como proveedor del contexto
 const CartProvider = ({ children }) => {
   const [carrito, setCarrito] = useState([]);
 
   const añadirProducto = (producto) => {
     const condicion = estaEnElCarrito(producto.id);
     if (condicion) {
-      //logica para sumar la cantidad si el producto ya estaba agregado
       const productosModificados = carrito.map((productoCarrito) => {
         if (productoCarrito.id === producto.id) {
           return {
